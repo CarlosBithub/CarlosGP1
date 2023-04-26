@@ -48,4 +48,6 @@ public class PlayerMovement : MonoBehaviour
         faceright = !faceright;
         transform.Rotate(0f, 180f, 0f);
     }
+
+  
 }
