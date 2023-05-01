@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,20 +13,40 @@ public class EnemyAI1 : MonoBehaviour
     public float speed;
     //Reference to our player.
     public Transform player;
+    public bool sight = false;
+
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            sight = true;
+        }
+       
+        
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            sight = false;
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         //check if the player is withn distance of the enemy.
-        if (Vector2.Distance(transform.position, player.position) < 6f)
+        if (sight == true)
         {
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x , transform.position.y), speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.position.x, transform.position.y), speed * Time.deltaTime);
         }
         else
         {
             Patrol();
-        }  
-        
+        }
+
     }
 
     private void Patrol()
@@ -35,7 +54,7 @@ public class EnemyAI1 : MonoBehaviour
         //set a goalpoint using the next point in transform list
         Transform goalPoint = points[nextID];
         //flip our enemys transform to look at points direction
-        if(goalPoint.transform.position.x> transform.position.x)
+        if (goalPoint.transform.position.x > transform.position.x)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
@@ -46,8 +65,8 @@ public class EnemyAI1 : MonoBehaviour
         //move the enemy towards the goal point 
         transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
         //check the distances between the enemy and the goalpoint to trigger next point
-        if (Vector2.Distance(transform.position, goalPoint.position)<1f)
-            {
+        if (Vector2.Distance(transform.position, goalPoint.position) < 1f)
+        {
             //check if we are at the end of the line to make this change -1 
             if (nextID == points.Count - 1)
             {
@@ -60,7 +79,7 @@ public class EnemyAI1 : MonoBehaviour
             }
             //apply the change on the next id
             nextID += idchangeValue;
-            }
+        }
     }
 
 }
