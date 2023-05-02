@@ -12,7 +12,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
-        currentHealth = 5;
+        currentHealth = 15;
         playerMovement = GetComponent<PlayerMovement>();
     }
     public void Update()
