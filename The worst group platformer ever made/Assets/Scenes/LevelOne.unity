@@ -3456,6 +3456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297180218, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3350200571184856642, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3504,11 +3508,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 3350200571345859538, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3350200571345859564, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2035408844}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7974255315826466967, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
 --- !u!1001 &3804786990555455372
 PrefabInstance:
