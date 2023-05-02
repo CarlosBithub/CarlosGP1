@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private float moveDirection;
     private bool isJumping = false;
     private bool isgrounded = false;
-    
+
+    // Start is called before the first frame update
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,11 +20,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" )
+        if (collision.gameObject.tag == "Ground")
         {
             isgrounded = true;
         }
     }
+
+    // Update is called once per frame
     void Update()
     {
         moveDirection = Input.GetAxis("Horizontal");
@@ -39,10 +42,14 @@ public class PlayerMovement : MonoBehaviour
         {
             flipcharacter();
         }
+        //rb.velocity = new Vector2(moveDirection * movespeed, rb.velocity.y);
+    }
+    private void FixedUpdate()
+    {
         rb.velocity = new Vector2(moveDirection * movespeed, rb.velocity.y);
         if (isJumping == true)
         {
-            if ( isgrounded == true)
+            if (isgrounded == true)
             {
                 rb.AddForce(new Vector2(10f, jumpforce));
             }
@@ -50,10 +57,11 @@ public class PlayerMovement : MonoBehaviour
         }
         isJumping = false;
     }
-   
     private void flipcharacter()
     {
         faceright = !faceright;
         transform.Rotate(0f, 180f, 0f);
     }
+
+  
 }
