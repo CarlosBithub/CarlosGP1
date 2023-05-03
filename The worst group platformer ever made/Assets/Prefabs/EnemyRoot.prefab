@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1436973152}
   m_Layer: 0
   m_Name: Hurtplayercollider
-  m_TagString: Untagged
+  m_TagString: EnemyBody
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,9 +202,10 @@ GameObject:
   - component: {fileID: 3350200571345859538}
   - component: {fileID: 3350200571345859564}
   - component: {fileID: 297180218}
+  - component: {fileID: 1074288888}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,3 +339,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1074288888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3350200571345859566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8851db8cf3d199c43a6ad70b4864c2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
