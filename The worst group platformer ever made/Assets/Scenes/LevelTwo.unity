@@ -486,7 +486,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 878126614}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &81036071
 CapsuleCollider2D:
@@ -964,11 +964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.71
+      value: 2.87
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.45
+      value: -6.06
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3644,6 +3644,7 @@ GameObject:
   - component: {fileID: 878126612}
   - component: {fileID: 878126615}
   - component: {fileID: 878126616}
+  - component: {fileID: 878126617}
   m_Layer: 0
   m_Name: HardToCodeBoss
   m_TagString: Boss
@@ -3731,8 +3732,8 @@ Transform:
   m_LocalScale: {x: 0.8578, y: 0.6353956, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1280719655}
   - {fileID: 81036070}
+  - {fileID: 1280719655}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3777,6 +3778,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &878126617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878126611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3197f90a0ca774281eb09eb9dfb006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealth: 10
+  speed: 40
+  attackRange: 2
+  phase2: 0
+  isdead: 0
+  player: {fileID: 1651501484}
+  isFlipped: 0
+  shotLocation: {fileID: 1280719655}
+  projectile: {fileID: 961414718707995246, guid: 3b4c138504ae70044b71d34bf483c08d, type: 3}
+  timer: 0
+  waitingTime: 4
 --- !u!1 &897393140
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,12 +5800,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280719654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.57, y: -0.17, z: 0}
+  m_LocalPosition: {x: -1.03, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 878126614}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1319799487
 GameObject:

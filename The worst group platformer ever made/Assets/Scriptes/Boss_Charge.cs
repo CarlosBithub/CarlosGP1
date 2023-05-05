@@ -43,19 +43,14 @@ public class Boss_Charge : StateMachineBehaviour
 
         distance = Vector2.Distance(player.position, rb.position);
         //Phase 1 
-        if (distance < bossBehaviour.attackRange && !bossBehaviour.phase2&& !bossBehaviour.phase3 && !bossBehaviour.isdead)
+        if (distance < bossBehaviour.attackRange && !bossBehaviour.phase2&& !bossBehaviour.isdead) 
         {
-            animator.SetTrigger("MeleeAttack");
+            animator.SetTrigger("Phase1Attack");
         }
         //phase 2
-        else if (distance< bossBehaviour.attackRange && bossBehaviour.phase2 && !bossBehaviour.phase3 && !bossBehaviour.isdead)
+        else if (distance< bossBehaviour.attackRange && bossBehaviour.phase2 && !bossBehaviour.isdead)
         {
             animator.SetTrigger("Phase2Attack");
-        }
-        //phase 3
-        else if (distance < bossBehaviour.attackRange && !bossBehaviour.phase2 && bossBehaviour.phase3 && !bossBehaviour.isdead)
-        {
-            animator.SetTrigger("Phase3Attack");
         }
         //Its dead!
         else if (bossBehaviour.isdead)
