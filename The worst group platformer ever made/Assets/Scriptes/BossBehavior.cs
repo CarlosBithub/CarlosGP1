@@ -6,7 +6,7 @@ public class BossBehavior : MonoBehaviour
 {
     //create a set a health variable for our boss
     public int bossHealth = 10;
-    public float speed = 40f;
+    public float speed = 15f;
     public float attackRange = 2f;
     //create a series of bool to track the bosses phases
     public bool phase2 = false;
@@ -19,7 +19,8 @@ public class BossBehavior : MonoBehaviour
     //create a shot location as a reference
     public Transform shotLocation;
     public GameObject projectile;
-
+    //gameobject that helps activate the boss
+    public GameObject bossobject;
 
     //create a time system to shoot this projectile every 5 seconds with the
     //change this number
