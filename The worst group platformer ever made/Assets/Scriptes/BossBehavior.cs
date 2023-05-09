@@ -20,7 +20,7 @@ public class BossBehavior : MonoBehaviour
     public Transform shotLocation;
     public GameObject projectile;
     //gameobject that helps activate the boss
-    public GameObject bossobject;
+    
 
     //create a time system to shoot this projectile every 5 seconds with the
     //change this number
@@ -64,7 +64,7 @@ public class BossBehavior : MonoBehaviour
         timer += Time.deltaTime;
     }
 
-    public void ProjectileShoot()
+    public void ProjectileShoot2()
     {
 
         if (timer > waitingTime)
@@ -72,6 +72,7 @@ public class BossBehavior : MonoBehaviour
             if (phase2)
             {
                 //creates a new gameobject based off our prefab.
+                //Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
                 GameObject clone = Instantiate(projectile, shotLocation.position, Quaternion.identity);
                 timer = 0;
             }

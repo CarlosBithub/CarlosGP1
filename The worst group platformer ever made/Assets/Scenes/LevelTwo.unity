@@ -964,11 +964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.98
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.19
+      value: -6.87
       objectReference: {fileID: 0}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3651,7 +3651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!70 &878126612
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3727,9 +3727,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878126611}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.62, y: -6.78, z: 0}
-  m_LocalScale: {x: 0.8578, y: 0.6353956, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.6200004, y: -6.78, z: 0}
+  m_LocalScale: {x: 0.85780007, y: 0.63539565, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 81036070}
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealth: 10
-  speed: 30
+  speed: 50.88
   attackRange: 2
   phase2: 0
   isdead: 0
@@ -3799,7 +3799,6 @@ MonoBehaviour:
   isFlipped: 0
   shotLocation: {fileID: 1280719655}
   projectile: {fileID: 961414718707995246, guid: 3b4c138504ae70044b71d34bf483c08d, type: 3}
-  bossobject: {fileID: 0}
   timer: 0
   waitingTime: 4
 --- !u!1 &897393140
