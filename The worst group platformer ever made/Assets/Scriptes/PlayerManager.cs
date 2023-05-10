@@ -21,6 +21,8 @@ public class PlayerManager : MonoBehaviour
         {
             PauseGame();
         }
+
+       
     }
 
     public void healthPotion()

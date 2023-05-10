@@ -5,9 +5,9 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     //create a set a health variable for our boss
-    public int bossHealth = 10;
+    public int bossHealth = 100;
     public float speed = 15f;
-    public float attackRange = 2f;
+    public float attackRange = 16f;
     //create a series of bool to track the bosses phases
     public bool phase2 = false;
     
@@ -18,7 +18,8 @@ public class BossBehavior : MonoBehaviour
 
     //create a shot location as a reference
     public Transform shotLocation;
-    public GameObject projectile;
+    public GameObject projectile1;
+    public GameObject projectile2;
     //gameobject that helps activate the boss
     
 
@@ -26,6 +27,10 @@ public class BossBehavior : MonoBehaviour
     //change this number
     public float timer;
     public int waitingTime;
+
+    //create a second time system for phase one.
+    public float timer2;
+    public int waitingtime2;
     
 
 
@@ -44,12 +49,12 @@ public class BossBehavior : MonoBehaviour
         //if the boss is below 7 and above 3 its phase 2, below 3 and above 1 its phase 3,
         //and is less then or equal to 0 its dead.
 
-        if (bossHealth < 5 && bossHealth > 0)
+        if (bossHealth < 50 && bossHealth > 0)
         {
             
             phase2 = true;
             speed = 3;
-            attackRange = 6;
+            attackRange = 16;
         }
         
         else if (bossHealth <= 0)
@@ -62,6 +67,7 @@ public class BossBehavior : MonoBehaviour
         }
 
         timer += Time.deltaTime;
+        timer2 += Time.deltaTime;
     }
 
     public void ProjectileShoot2()
@@ -73,11 +79,25 @@ public class BossBehavior : MonoBehaviour
             {
                 //creates a new gameobject based off our prefab.
                 //Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
-                GameObject clone = Instantiate(projectile, shotLocation.position, Quaternion.identity);
+                GameObject clone = Instantiate(projectile2, shotLocation.position, Quaternion.identity);
                 timer = 0;
             }
         }
     }
+
+    public void ProjectileShoot1()
+    {
+        if (timer2 > waitingtime2)
+        {
+            if (!phase2)
+            {
+                GameObject clone2 = Instantiate(projectile1, shotLocation.position, Quaternion.identity);
+                timer2 = 0;
+            }
+        }
+    }
+
+
     //make the boss rotate at the player's direction;
     public void LookAtPlayer()
     {

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7962156600991859709}
   - component: {fileID: 5933288860278785291}
   - component: {fileID: -979231830548978970}
-  - component: {fileID: 7960402095887889877}
+  - component: {fileID: 2950270935300823569}
+  - component: {fileID: 4139329997878891072}
   m_Layer: 0
   m_Name: BossFireBall2
   m_TagString: Untagged
@@ -124,7 +125,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &7960402095887889877
+--- !u!114 &2950270935300823569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +134,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 961414718707995246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96609900a3d9ab146b50b4b973f228fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8695bc5aa792aa24298983482e4ffeb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 70.4
+--- !u!114 &4139329997878891072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961414718707995246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a60a4c770fdb141baa5397aa61dcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
