@@ -35,6 +35,7 @@ public class PlayerManager : MonoBehaviour
     public void healthPotion()
     {
         currentHealth += 5;
+        healthBar.SetHealth(currentHealth);
     }
 
     public bool PickupItem(GameObject obj)
