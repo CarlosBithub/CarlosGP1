@@ -8,7 +8,7 @@ TagManager:
   - Health+
   - Ground
   - Enemy
-  - EnemyBody
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,13 @@ public class PlayerManager : MonoBehaviour
     public int currentHealth = 1;
     PlayerMovement playerMovement;
     public int coinCount;
+    public HealthBar healthBar;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     private void Awake()
     {
@@ -21,6 +28,8 @@ public class PlayerManager : MonoBehaviour
         {
             PauseGame();
         }
+
+       
     }
 
     public void healthPotion()
@@ -52,5 +61,6 @@ public class PlayerManager : MonoBehaviour
     public void TakeDamage()
     {
         currentHealth -= 1;
+        healthBar.SetHealth(currentHealth);
     }
 }
