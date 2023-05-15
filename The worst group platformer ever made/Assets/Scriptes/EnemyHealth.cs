@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int currentHealth = 1;
 
+    public int currentHealth = 1;
+   
     private void Awake()
     {
         currentHealth = 10;
@@ -18,8 +19,14 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            TakeDamage();
+        }
+    }
 }

@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
         enemyHealth = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
-        bossbehavior = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossBehavior>();
+        //bossbehavior = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossBehavior>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,11 +24,6 @@ public class Bullet : MonoBehaviour
         {
             bossbehavior.TakeBossDamage();
             Destroy(gameObject);
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            enemyHealth.TakeDamage();
         }
 
         if (collision.gameObject.tag == "EnemyBody")
