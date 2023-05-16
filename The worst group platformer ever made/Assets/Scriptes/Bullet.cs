@@ -20,9 +20,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Boss")
+        if (collision.gameObject.tag!="Player")
         {
-            bossbehavior.TakeBossDamage();
+            //bossbehavior.TakeBossDamage();
             Destroy(gameObject);
         }
 

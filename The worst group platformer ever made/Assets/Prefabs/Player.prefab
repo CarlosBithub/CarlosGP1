@@ -249,9 +249,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 53cd3d5c2a93450478e19109ec4a5e91, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &3804786990519557428
 MonoBehaviour:
@@ -297,3 +297,4 @@ MonoBehaviour:
   maxHealth: 15
   currentHealth: 15
   coinCount: 0
+  healthBar: {fileID: 0}

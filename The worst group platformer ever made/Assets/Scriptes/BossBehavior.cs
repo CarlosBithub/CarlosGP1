@@ -122,4 +122,11 @@ public class BossBehavior : MonoBehaviour
     {
         bossHealth -= 1;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            bossHealth -= 1;
+        }
+    }
 }
