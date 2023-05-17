@@ -4118,11 +4118,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1977691605 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3804786990519557435, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
-  m_PrefabInstance: {fileID: 3804786990555455372}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1981299366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4407,19 +4402,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
   m_PrefabInstance: {fileID: 3804786990555455372}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2035408845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977691605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8793086876d51004e933629ef6857d94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MyScoreText: {fileID: 936228089}
 --- !u!1 &2054788948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4833,6 +4815,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1062713211}
+    - target: {fileID: 2035408845, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
+      propertyPath: MyScoreText
+      value: 
+      objectReference: {fileID: 936228089}
     - target: {fileID: 3804786990519557424, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: m_RootOrder
       value: 11

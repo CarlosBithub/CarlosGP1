@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 3804786990519557428}
   - component: {fileID: 1895728388}
   - component: {fileID: 1895728394}
+  - component: {fileID: 2035408845}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -298,3 +299,16 @@ MonoBehaviour:
   currentHealth: 15
   coinCount: 0
   healthBar: {fileID: 0}
+--- !u!114 &2035408845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3804786990519557435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8793086876d51004e933629ef6857d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyScoreText: {fileID: 0}
