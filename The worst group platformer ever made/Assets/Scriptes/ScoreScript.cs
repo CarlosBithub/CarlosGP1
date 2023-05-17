@@ -12,12 +12,12 @@ public class ScoreScript : MonoBehaviour
     {
         playermanager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
         playermanager.coinCount = 0;
-        MyScoreText.text = "Score :" + playermanager.coinCount;
+        MyScoreText.text = "CoinCount :" + playermanager.coinCount;
     }
 
     
     void Update()
     {
-        MyScoreText.text = "Score :" + playermanager.coinCount;
+        MyScoreText.text = "CoinCount :" + playermanager.coinCount;
     }
 }
