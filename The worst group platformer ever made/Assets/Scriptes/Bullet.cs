@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     BossBehavior bossbehavior;
     EnemyHealth enemyHealth;
+    public int destroyTime = 3;
+    public float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -18,17 +20,23 @@ public class Bullet : MonoBehaviour
         //bossbehavior = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossBehavior>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.gameObject.tag!="Player")
+       timer += Time.deltaTime;
+        if (timer > destroyTime)
         {
-            //bossbehavior.TakeBossDamage();
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 
         if (collision.gameObject.tag == "EnemyBody")
         {
             Destroy(gameObject);
         }
+
+
     }
 }
