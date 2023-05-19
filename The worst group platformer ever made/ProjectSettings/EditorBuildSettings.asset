@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelTwo.unity
     guid: 6ff1ec596a4e05641a4f1c1fe4a7761b
+  - enabled: 1
+    path: Assets/Scenes/HolyBattleTitle.unity
+    guid: 673acffe5699f0245bba0849f8e77297
   m_configObjects: {}
