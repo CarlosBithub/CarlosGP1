@@ -20,6 +20,7 @@ public class BossBehavior : MonoBehaviour
     public Transform shotLocation;
     public GameObject projectile1;
     public GameObject projectile2;
+    public GameObject wintext;
     //gameobject that helps activate the boss
     
 
@@ -63,7 +64,9 @@ public class BossBehavior : MonoBehaviour
             phase2 = false;
             isdead = true;
             Destroy(gameObject);
-            
+            wintext.SetActive(true);
+            Time.timeScale = 0;
+
         }
 
         timer += Time.deltaTime;
