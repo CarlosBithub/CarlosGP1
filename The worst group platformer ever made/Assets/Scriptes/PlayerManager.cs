@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     PlayerMovement playerMovement;
     public int coinCount;
     public HealthBar healthBar;
+    public GameObject gameovertext;
 
     private void Start()
     {
@@ -56,6 +57,7 @@ public class PlayerManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
+        gameovertext.SetActive(true);
     }
 
     //create a function that will damage our player.
