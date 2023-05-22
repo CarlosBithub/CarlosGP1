@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     public Transform shootingPoint;
     public GameObject bulletPrefab;
-
+    public AudioSource Shootsound;
     // Update is called once per frame
     void Update()
     {
