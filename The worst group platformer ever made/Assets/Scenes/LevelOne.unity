@@ -608,6 +608,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074288888, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: EnemyDeath
+      value: 
+      objectReference: {fileID: 823258388}
     - target: {fileID: 3350200571184856642, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -655,10 +659,6 @@ PrefabInstance:
     - target: {fileID: 3350200571184856643, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_Name
       value: EnemyRoot (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3350200571184856643, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3350200571345859564, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: player
@@ -2903,6 +2903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074288888, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: EnemyDeath
+      value: 
+      objectReference: {fileID: 823258388}
     - target: {fileID: 3350200571184856642, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3346,6 +3350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074288888, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: EnemyDeath
+      value: 
+      objectReference: {fileID: 823258388}
     - target: {fileID: 3350200570075438660, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.26
@@ -5206,6 +5214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1074288888, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
+      propertyPath: EnemyDeath
+      value: 
+      objectReference: {fileID: 823258388}
     - target: {fileID: 3350200571184856642, guid: 321bb6c5c1cd39049988c4ce0f625386, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -5275,6 +5287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1895728388, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
+      propertyPath: Shootsound
+      value: 
+      objectReference: {fileID: 293076801}
     - target: {fileID: 1895728394, guid: 49f9b02ac67d8f4448e137a3b092088b, type: 3}
       propertyPath: healthBar
       value: 

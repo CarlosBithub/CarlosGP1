@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
 
     public int currentHealth = 1;
-   
+    public AudioSource EnemyDeath;
     private void Awake()
     {
         currentHealth = 20;
@@ -19,7 +19,8 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject); 
+            EnemyDeath.Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -352,3 +352,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 20
+  EnemyDeath: {fileID: 0}

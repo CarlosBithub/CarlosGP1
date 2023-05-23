@@ -12,6 +12,7 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            Shootsound.Play();
             Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
         }
     }
