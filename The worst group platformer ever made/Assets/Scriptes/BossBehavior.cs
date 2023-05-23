@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossBehavior : MonoBehaviour
 {
     //create a set a health variable for our boss
-    public int bossHealth = 200;
+    public int bossHealth = 300;
     public float speed = 15f;
     public float attackRange = 16f;
     //create a series of bool to track the bosses phases
@@ -50,7 +50,7 @@ public class BossBehavior : MonoBehaviour
         //if the boss is below 7 and above 3 its phase 2, below 3 and above 1 its phase 3,
         //and is less then or equal to 0 its dead.
 
-        if (bossHealth < 100 && bossHealth > 0)
+        if (bossHealth < 125 && bossHealth > 0)
         {
             
             phase2 = true;
